@@ -1,0 +1,9 @@
+extends ../layout
+
+block content
+    .container
+        .row
+            each item in movies
+                .col-md-2
+                    .thumbnail
+                        h3 #{item.title}
